@@ -25,51 +25,78 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Certainly! Here's a description you can use for your repository:
 
-## Installation
+---
 
-```bash
-$ npm install
-```
+# NestJS CRUD API for Notes and Users
 
-## Running the app
+This repository contains a RESTful API built using [NestJS](https://nestjs.com/), a progressive Node.js framework for building efficient and scalable server-side applications. The API provides basic CRUD (Create, Read, Update, Delete) functionality for managing notes and users.
 
-```bash
-# development
-$ npm run start
+## Features
 
-# watch mode
-$ npm run start:dev
+- **User Management**: Create, and read users.
+- **Note Management**: Create, read, update, and delete notes.
+- **NestJS Framework**: Leverage the power and flexibility of NestJS to build a robust and maintainable API.
+- **TypeORM Integration**: Utilize TypeORM for seamless interaction with the database.
+- **Validation**: Ensure data integrity with comprehensive validation using [class-validator](https://github.com/typestack/class-validator).
+- **DTOs (Data Transfer Objects)**: Clean and consistent data transfer using DTOs.
+- **Exception Handling**: Graceful error handling and informative error messages.
+- **Modular Architecture**: Organized code structure with modular architecture for easy scalability and maintainability.
 
-# production mode
-$ npm run start:prod
-```
+## Getting Started
 
-## Test
+### Prerequisites
 
-```bash
-# unit tests
-$ npm run test
+- Node.js (>= 12.x)
+- npm (>= 6.x) or yarn
 
-# e2e tests
-$ npm run test:e2e
+### Installation
 
-# test coverage
-$ npm run test:cov
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository-name.git
+   cd your-repository-name
+   ```
 
-## Support
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If
-you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Running the Application
 
-## Stay in touch
+1. Start the development server:
+   ```bash
+   npm run start:dev
+   # or
+   yarn start:dev
+   ```
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+2. The API will be running at `http://localhost:3000`.
+
+### API Endpoints
+
+#### Users
+
+- **GET /users**: Retrieve a list of all users.
+- **GET /users/:id**: Retrieve a specific user by ID.
+- **POST /users**: Create a new user.
+
+#### Notes
+
+- **GET /notes**: Retrieve a list of all notes.
+- **GET /notes/:id**: Retrieve a specific note by ID.
+- **POST /notes**: Create a new note.
+- **PUT /notes/:id**: Update an existing note by ID.
+- **DELETE /notes/:id**: Delete a note by ID.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any features, bug fixes, or enhancements.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the MIT License.
